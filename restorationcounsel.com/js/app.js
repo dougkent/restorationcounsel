@@ -14,11 +14,17 @@ app.config(function ($routeProvider, $locationProvider) {
         .when("/crisis-resources", {
             templateUrl: "js/crisis-resources.component.html"
         })
-        .when("/about", {
-            templateUrl: "js/about.component.html"
+        .when("/meet-alyssa", {
+            templateUrl: "js/meet-alyssa.component.html"
         })
         .when("/contact", {
             templateUrl: "js/contact.component.html"
+        })
+        .when("/forms", {
+            templateUrl: "js/forms.component.html"
+        })
+        .when("/what-to-expect", {
+            templateUrl: "js/what-to-expect.component.html"
         })
         .otherwise("/");
 })

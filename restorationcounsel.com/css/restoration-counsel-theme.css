@@ -125,13 +125,13 @@ h1 {
     background-position: 50% 50%;
 }
 
-.emdr-bg {
-    background: url('../img/eyes.jpg') no-repeat;
+.counseling-bg {
+    background: url('../img/mindfulness.jpg') no-repeat;
     background-size: cover;
     background-position: 50% 65%;
 }
 
-.counseling-bg {
+.what-to-expect-bg {
     background: url('../img/clovers.jpg') no-repeat;
     background-size: cover;
     background-position: 0% 25%;
@@ -139,22 +139,22 @@ h1 {
 
 .footer-section {
     padding: 20px 0;
-    background-color: #404041;
-    color: #fff2d2;
+    background-color: #89898b;
+    color: #fffaee;
 }
 
     .footer-section a {
-        color: #fff2d2;
+        color: #fffaee;
     }
 
 .panel-default {
-    background-color: #404041;
-    color: #fff2d2;
+    background-color: #89898b;
+    color: #fffaee;
     font-size: 16px;
 }
 
     .panel-default a {
-        color: #fff2d2;
+        color: #fffaee;
         text-decoration: underline;
     }
 

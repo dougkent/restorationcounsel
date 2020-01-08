@@ -10,7 +10,7 @@ h1 {
 .nav-section {
     background: url('../img/navbar-background.jpg') no-repeat;
     background-size: cover;
-    background-position: 50% 27%;
+    background-position: 50% 20%;
     height: 275px;
 }
 
@@ -18,7 +18,7 @@ h1 {
     color: #404041;
     padding-left: 25px;
     font-family: 'Allura', cursive;
-    font-size: 28px;
+    font-size: 36px;
 }
 
 .navbar-rc .navbar-collapse {
@@ -85,8 +85,9 @@ h1 {
 
 @media (min-width: 768px) {
     .navbar-rc .navbar-brand {
-        font-size: 42px;
+        font-size: 48px;
         padding-left: 50px;
+        margin-top: 10px;
     }
 
     .rc-container {

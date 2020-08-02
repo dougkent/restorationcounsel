@@ -13,8 +13,8 @@ const rcTheme = createMuiTheme({
         },
     },
     typography: {
-        fontFamily: '"Noto+Serif", sans-serif',
-        fontSize: 12,
+        fontFamily: "'Noto Serif', serif",
+        fontSize: 14,
         h1: {
             fontWeight: 300,
             lineHeight: 1,

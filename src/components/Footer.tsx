@@ -17,6 +17,10 @@ const useStyles = makeStyles((theme: Theme) =>
             backgroundColor: '#89898b',
             padding: `${theme.spacing(2)}px 0`,
         },
+        link: {
+            color: theme.palette.secondary.main,
+            textDecoration: 'none',
+        },
     })
 );
 
@@ -36,7 +40,9 @@ const Footer: React.FC = () => {
                 <br />
                 (936)-203-1772
                 <br />
-                <a href='mailto:alyssa@restorationcounsel.com'>
+                <a
+                    href='mailto:alyssa@restorationcounsel.com'
+                    className={classes.link}>
                     alyssa@restorationcounsel.com
                 </a>
             </div>

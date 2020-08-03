@@ -30,6 +30,7 @@ const App: React.FC = () => {
                 <Switch>
                     <Route exact path='/' render={() => <Home />} />
                 </Switch>
+                <Footer />
             </Container>
             <Footer />
         </Router>

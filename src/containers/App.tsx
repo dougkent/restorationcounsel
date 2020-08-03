@@ -3,34 +3,24 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 // Material UI
-import { Container, createStyles, Theme, makeStyles } from '@material-ui/core';
+import { Container } from '@material-ui/core';
 
 // RC
-import { Nav, Home, Footer } from '../components';
-import { rcTheme } from '../themes';
-
-const useStyles = makeStyles((theme: Theme) =>
-    createStyles({
-        container: {
-            //minHeight: '100vh',
-        },
-    })
-);
+import { Nav, Home, Footer, CounselingServices } from '../components';
 
 const App: React.FC = () => {
-    const classes = useStyles(rcTheme);
-
     return (
         <Router>
             <Nav />
-            <Container
-                maxWidth={false}
-                disableGutters={true}
-                className={classes.container}>
+            <Container maxWidth={false} disableGutters={true}>
                 <Switch>
                     <Route exact path='/' render={() => <Home />} />
+                    <Route
+                        exact
+                        path='/counseling-services'
+                        render={() => <CounselingServices />}
+                    />
                 </Switch>
-                <Footer />
             </Container>
             <Footer />
         </Router>

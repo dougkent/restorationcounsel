@@ -12,7 +12,7 @@ import { rcTheme } from '../themes';
 const useStyles = makeStyles((theme: Theme) =>
     createStyles({
         container: {
-            minHeight: '100vh',
+            //minHeight: '100vh',
         },
     })
 );
@@ -24,14 +24,14 @@ const App: React.FC = () => {
         <Router>
             <Nav />
             <Container
-                maxWidth='xl'
+                maxWidth={false}
                 disableGutters={true}
                 className={classes.container}>
                 <Switch>
                     <Route exact path='/' render={() => <Home />} />
                 </Switch>
-                <Footer />
             </Container>
+            <Footer />
         </Router>
     );
 };

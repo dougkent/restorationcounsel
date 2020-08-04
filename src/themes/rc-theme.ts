@@ -28,11 +28,12 @@ const rcTheme = createMuiTheme({
         h3: {
             fontWeight: 300,
             lineHeight: 1,
-            marginBottom: '0.5rem',
+            marginBottom: '0.9rem',
         },
         h4: {
             fontWeight: 300,
             lineHeight: 1,
+            marginBottom: '0.7rem',
         },
         h5: {
             fontWeight: 300,

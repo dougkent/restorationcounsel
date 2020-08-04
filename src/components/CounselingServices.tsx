@@ -70,17 +70,17 @@ const CounselingServices: React.FC = () => {
             maxWidth='lg'
             className={classes.counselingServicesContainer}>
             <Typography variant='h3'>Services</Typography>
-            <Typography variant='body1'>
+            <Typography variant='body1' paragraph>
                 Restoration Counseling is a private practice in the Woodlands
                 area that is owned and operated by Alyssa Meyers, MA, LPC, NCC.
                 Alyssa primarily works with adults and teenagers and specializes
                 in the following areas:
             </Typography>
-            <Typography variant='body1'>
+            <Typography variant='body1' paragraph>
                 Anxiety Disorders, Depression, Trauma, Abuse-related issues, and
                 Christian-based counseling
             </Typography>
-            <Typography variant='body1'>
+            <Typography variant='body1' paragraph>
                 Counseling services cater to your personality, circumstances,
                 and processing style; however, at Restoration Counseling there
                 are specific counseling techniques used to ensure that you are
@@ -96,7 +96,7 @@ const CounselingServices: React.FC = () => {
                     </Typography>
                 </AccordionSummary>
                 <AccordionDetails className={classes.accordionDetails}>
-                    <Typography variant='body1'>
+                    <Typography variant='body1' paragraph>
                         CBT works to modify dysfunctional emotions, behaviors,
                         and thoughts. In this type of therapy, we work to create
                         healthy changes and solutions to your problems by
@@ -115,7 +115,7 @@ const CounselingServices: React.FC = () => {
                     </Typography>
                 </AccordionSummary>
                 <AccordionDetails className={classes.accordionDetails}>
-                    <Typography variant='body1'>
+                    <Typography variant='body1' paragraph>
                         DBT is often utilized alongside CBT and focuses on
                         regulating your emotions. This is a great technique for
                         those who experience intense or quick shifts in mood and
@@ -136,7 +136,7 @@ const CounselingServices: React.FC = () => {
                 </AccordionSummary>
                 <AccordionDetails className={classes.accordionDetails}>
                     <div>
-                        <Typography variant='body1'>
+                        <Typography variant='body1' paragraph>
                             EMDR is a unique therapy technique used for
                             individuals who have experienced trauma. When an
                             individual experiences trauma, the brain cannot

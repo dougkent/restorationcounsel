@@ -12,6 +12,7 @@ import {
     Footer,
     CounselingServices,
     MeetAlyssa,
+    WhatToExpect,
 } from '../components';
 
 // RC
@@ -52,6 +53,11 @@ const App: React.FC = () => {
                             exact
                             path='/meet-alyssa'
                             render={() => <MeetAlyssa />}
+                        />
+                        <Route
+                            exact
+                            path='/what-to-expect'
+                            render={() => <WhatToExpect />}
                         />
                     </Switch>
                 </Container>

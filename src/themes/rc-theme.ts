@@ -42,9 +42,6 @@ const rcTheme = createMuiTheme({
             fontWeight: 300,
             lineHeight: 1,
         },
-        body1: {
-            marginBottom: '0.5rem',
-        },
     },
 });
 

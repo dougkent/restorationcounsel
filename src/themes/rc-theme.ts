@@ -18,14 +18,17 @@ const rcTheme = createMuiTheme({
         h1: {
             fontWeight: 300,
             lineHeight: 1,
+            marginBottom: '1rem',
         },
         h2: {
             fontWeight: 300,
             lineHeight: 1,
+            marginBottom: '1rem',
         },
         h3: {
             fontWeight: 300,
             lineHeight: 1,
+            marginBottom: '0.5rem',
         },
         h4: {
             fontWeight: 300,
@@ -38,6 +41,9 @@ const rcTheme = createMuiTheme({
         h6: {
             fontWeight: 300,
             lineHeight: 1,
+        },
+        body1: {
+            marginBottom: '0.5rem',
         },
     },
 });

@@ -15,9 +15,8 @@ import {
     WhatToExpect,
     CrisisResources,
     Forms,
+    Contact,
 } from '../components';
-
-// RC
 import { rcTheme } from '../themes';
 
 const useStyles = makeStyles((theme: Theme) =>
@@ -68,6 +67,11 @@ const App: React.FC = () => {
                             render={() => <CrisisResources />}
                         />
                         <Route exact path='/forms' render={() => <Forms />} />
+                        <Route
+                            exact
+                            path='/contact'
+                            render={() => <Contact />}
+                        />
                     </Switch>
                 </Container>
                 <Footer />

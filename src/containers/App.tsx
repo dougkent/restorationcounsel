@@ -14,6 +14,7 @@ import {
     MeetAlyssa,
     WhatToExpect,
     CrisisResources,
+    Forms,
 } from '../components';
 
 // RC
@@ -66,6 +67,7 @@ const App: React.FC = () => {
                             path='/crisis-resources'
                             render={() => <CrisisResources />}
                         />
+                        <Route exact path='/forms' render={() => <Forms />} />
                     </Switch>
                 </Container>
                 <Footer />

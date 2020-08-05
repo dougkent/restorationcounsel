@@ -16,10 +16,6 @@ import * as officeImg from '../assets/office-inside.jpg';
 
 const useStyles = makeStyles((theme: Theme) =>
     createStyles({
-        whatToExpectContainer: {
-            marginBottom: theme.spacing(3),
-            paddingTop: theme.spacing(2),
-        },
         whatToExpectBody: {
             display: 'flex',
             justifyContent: 'space-between',
@@ -79,7 +75,7 @@ const WhatToExpect: React.FC = () => {
     const classes = useStyles(rcTheme);
 
     return (
-        <Container maxWidth='lg' className={classes.whatToExpectContainer}>
+        <Container maxWidth='lg'>
             <Typography variant='h3'>What To Expect</Typography>
             <div className={classes.whatToExpectBody}>
                 <div className={classes.WhatToExpectText}>

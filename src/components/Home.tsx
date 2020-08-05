@@ -2,7 +2,7 @@
 import React from 'react';
 
 // Material UI
-import { createStyles, Theme, makeStyles } from '@material-ui/core';
+import { Container, createStyles, Theme, makeStyles } from '@material-ui/core';
 
 // RC
 import { rcTheme } from '../themes';
@@ -17,9 +17,6 @@ const useStyles = makeStyles((theme: Theme) =>
             justifyContent: 'space-between',
             textAlign: 'center',
             flexWrap: 'wrap',
-            padding: `${theme.spacing(2)}px ${theme.spacing(
-                2
-            )}px 0px ${theme.spacing(2)}px`,
             [`${theme.breakpoints.up('xs')} and (orientation: landscape)`]: {
                 flexWrap: 'noWrap',
             },
@@ -86,7 +83,7 @@ const Home: React.FC = () => {
     const classes = useStyles(rcTheme);
 
     return (
-        <div className={classes.homeContainer}>
+        <Container maxWidth={false} className={classes.homeContainer}>
             <div className={classes.linkTile}>
                 <a
                     href='/counseling-services'
@@ -108,7 +105,7 @@ const Home: React.FC = () => {
                     Crisis Resources
                 </a>
             </div>
-        </div>
+        </Container>
     );
 };
 

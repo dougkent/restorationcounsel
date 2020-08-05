@@ -19,10 +19,6 @@ import * as officeImage from '../assets/office-outside.jpg';
 
 const useStyles = makeStyles((theme: Theme) =>
     createStyles({
-        counselingServicesContainer: {
-            marginBottom: theme.spacing(3),
-            paddingTop: theme.spacing(2),
-        },
         accordionDetails: {
             flexWrap: 'wrap',
         },
@@ -66,9 +62,7 @@ const CounselingServices: React.FC = () => {
     };
 
     return (
-        <Container
-            maxWidth='lg'
-            className={classes.counselingServicesContainer}>
+        <Container maxWidth='lg'>
             <Typography variant='h3'>Services</Typography>
             <Typography variant='body1' paragraph>
                 Restoration Counseling is a private practice in the Woodlands

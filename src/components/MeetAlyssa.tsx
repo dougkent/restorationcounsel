@@ -16,10 +16,6 @@ import * as alyssaImg from '../assets/headshot.jpg';
 
 const useStyles = makeStyles((theme: Theme) =>
     createStyles({
-        meetAlyssaContainer: {
-            marginBottom: theme.spacing(3),
-            paddingTop: theme.spacing(2),
-        },
         meetAlyssaBody: {
             display: 'flex',
             justifyContent: 'space-between',
@@ -79,7 +75,7 @@ const MeetAlyssa: React.FC = () => {
     const classes = useStyles(rcTheme);
 
     return (
-        <Container maxWidth='lg' className={classes.meetAlyssaContainer}>
+        <Container maxWidth='lg'>
             <Typography variant='h3'>Meet Alyssa</Typography>
             <div className={classes.meetAlyssaBody}>
                 <div

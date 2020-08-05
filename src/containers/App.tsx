@@ -13,6 +13,7 @@ import {
     CounselingServices,
     MeetAlyssa,
     WhatToExpect,
+    CrisisResources,
 } from '../components';
 
 // RC
@@ -27,6 +28,7 @@ const useStyles = makeStyles((theme: Theme) =>
         },
         body: {
             flexGrow: 1,
+            padding: `${theme.spacing(3)}px 0px`,
         },
     })
 );
@@ -58,6 +60,11 @@ const App: React.FC = () => {
                             exact
                             path='/what-to-expect'
                             render={() => <WhatToExpect />}
+                        />
+                        <Route
+                            exact
+                            path='/crisis-resources'
+                            render={() => <CrisisResources />}
                         />
                     </Switch>
                 </Container>

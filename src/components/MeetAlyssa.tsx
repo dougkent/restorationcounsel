@@ -16,10 +16,16 @@ import * as alyssaImg from '../assets/headshot.jpg';
 
 const useStyles = makeStyles((theme: Theme) =>
     createStyles({
+        meetAlyssaContainer: {
+            display: 'flex',
+            flexDirection: 'column',
+            flexGrow: 1,
+        },
         meetAlyssaBody: {
             display: 'flex',
             justifyContent: 'space-between',
             alignItems: 'start',
+            flexGrow: 1,
         },
         meetAlyssaImg: {
             background: `url(${alyssaImg}) no-repeat`,
@@ -50,10 +56,10 @@ const useStyles = makeStyles((theme: Theme) =>
                 height: theme.spacing(65),
             },
             [theme.breakpoints.up('md')]: {
-                height: theme.spacing(75),
+                height: '100%',
+                minHeight: '580px',
             },
             [theme.breakpoints.up('lg')]: {
-                height: theme.spacing(85),
                 width: '39%',
             },
         },
@@ -75,7 +81,7 @@ const MeetAlyssa: React.FC = () => {
     const classes = useStyles(rcTheme);
 
     return (
-        <Container maxWidth='lg'>
+        <Container maxWidth='lg' className={classes.meetAlyssaContainer}>
             <Typography variant='h3'>Meet Alyssa</Typography>
             <div className={classes.meetAlyssaBody}>
                 <div

@@ -14,11 +14,13 @@ const useStyles = makeStyles((theme: Theme) =>
     createStyles({
         homeContainer: {
             display: 'flex',
+            flexGrow: 1,
+            flexDirection: 'column',
             justifyContent: 'space-between',
             textAlign: 'center',
-            flexWrap: 'wrap',
+            minHeight: '100%',
             [`${theme.breakpoints.up('xs')} and (orientation: landscape)`]: {
-                flexWrap: 'noWrap',
+                flexDirection: 'row',
             },
             [theme.breakpoints.up('lg')]: {
                 flexWrap: 'noWrap',
@@ -26,24 +28,26 @@ const useStyles = makeStyles((theme: Theme) =>
         },
         linkTile: {
             width: '100%',
-            height: '30vh',
+            height: theme.spacing(25),
             border: `1px solid ${theme.palette.primary.main}`,
             padding: theme.spacing(1),
             marginBottom: theme.spacing(2),
             [`${theme.breakpoints.up('xs')} and (orientation: landscape)`]: {
                 width: '30vw',
-                height: '40vh',
+                height: theme.spacing(18),
+                marginBottom: 0,
             },
             [theme.breakpoints.up('md')]: {
-                height: '25vh',
+                height: '100%',
             },
             [`${theme.breakpoints.up('md')} and (orientation: landscape)`]: {
                 width: '30vw',
-                height: '45vh',
             },
             [theme.breakpoints.up('lg')]: {
+                width: '31vw',
+            },
+            [theme.breakpoints.up('xl')]: {
                 width: '32vw',
-                height: '55vh',
             },
         },
         link: {

@@ -16,10 +16,16 @@ import * as officeImg from '../assets/office-inside.jpg';
 
 const useStyles = makeStyles((theme: Theme) =>
     createStyles({
+        whatToExpectContainer: {
+            display: 'flex',
+            flexDirection: 'column',
+            flexGrow: 1,
+        },
         whatToExpectBody: {
             display: 'flex',
             justifyContent: 'space-between',
             alignItems: 'start',
+            flexGrow: 1,
         },
         whatToExpectImg: {
             background: `url(${officeImg}) no-repeat`,
@@ -47,13 +53,10 @@ const useStyles = makeStyles((theme: Theme) =>
             [theme.breakpoints.up('sm')]: {
                 display: 'block',
                 width: '48%',
-                height: theme.spacing(65),
-            },
-            [theme.breakpoints.up('md')]: {
-                height: theme.spacing(75),
+                height: '100%',
+                minHeight: theme.spacing(65),
             },
             [theme.breakpoints.up('lg')]: {
-                height: theme.spacing(85),
                 width: '39%',
             },
         },
@@ -75,7 +78,7 @@ const WhatToExpect: React.FC = () => {
     const classes = useStyles(rcTheme);
 
     return (
-        <Container maxWidth='lg'>
+        <Container maxWidth='lg' className={classes.whatToExpectContainer}>
             <Typography variant='h3'>What To Expect</Typography>
             <div className={classes.whatToExpectBody}>
                 <div className={classes.WhatToExpectText}>

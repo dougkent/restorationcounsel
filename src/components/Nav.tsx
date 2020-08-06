@@ -53,6 +53,7 @@ const useStyles = makeStyles((theme: Theme) =>
         },
         title: {
             fontFamily: "'Allura', cursive",
+            marginBottom: 0,
         },
         navLink: {
             textDecoration: 'none',
@@ -168,14 +169,30 @@ const Nav: React.FC = () => {
                 color='transparent'
                 className={classes.appBar}>
                 <Toolbar className={classes.toolbar}>
-                    <Typography
-                        variant='h4'
-                        color='primary'
-                        className={classes.title}>
-                        <ReactRouter.Link to='/' className={classes.navLink}>
-                            Restoration Counseling
-                        </ReactRouter.Link>
-                    </Typography>
+                    <Hidden smUp>
+                        <Typography
+                            variant='h4'
+                            color='primary'
+                            className={classes.title}>
+                            <ReactRouter.Link
+                                to='/'
+                                className={classes.navLink}>
+                                Restoration Counseling
+                            </ReactRouter.Link>
+                        </Typography>
+                    </Hidden>
+                    <Hidden xsDown>
+                        <Typography
+                            variant='h3'
+                            color='primary'
+                            className={classes.title}>
+                            <ReactRouter.Link
+                                to='/'
+                                className={classes.navLink}>
+                                Restoration Counseling
+                            </ReactRouter.Link>
+                        </Typography>
+                    </Hidden>
                     <div>
                         <Hidden mdUp>
                             <IconButton

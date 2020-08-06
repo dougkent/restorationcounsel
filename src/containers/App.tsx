@@ -29,6 +29,7 @@ const useStyles = makeStyles((theme: Theme) =>
         body: {
             flexGrow: 1,
             padding: `${theme.spacing(3)}px 0px`,
+            display: 'flex',
         },
     })
 );

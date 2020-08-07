@@ -34,7 +34,7 @@ const useStyles = makeStyles((theme: Theme) =>
         },
         mobileImg: {
             width: '100%',
-            height: theme.spacing(50),
+            height: theme.spacing(60),
             marginBottom: theme.spacing(2),
             [`${theme.breakpoints.up('xs')} and (orientation: landscape)`]: {
                 display: 'none',

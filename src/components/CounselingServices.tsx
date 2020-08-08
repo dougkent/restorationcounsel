@@ -21,6 +21,9 @@ const useStyles = makeStyles((theme: Theme) =>
     createStyles({
         accordionDetails: {
             flexWrap: 'wrap',
+            '& a': {
+                color: theme.palette.primary.main,
+            },
         },
         videoBox: {
             width: '100%',
@@ -151,7 +154,7 @@ const CounselingServices: React.FC = () => {
                             width='100%'
                             height='100%'
                             title='EMDR Video'
-                            src='https://www.youtube.com/embed/_QJbCtr8bvA'></iframe>
+                            src='https://www.youtube.com/embed/Pkfln-ZtWeY'></iframe>
                     </div>
                 </AccordionDetails>
             </Accordion>

@@ -14,7 +14,7 @@ import {
     MeetAlyssa,
     WhatToExpect,
     CrisisResources,
-    Forms,
+    FormsAndLinks,
     Contact,
 } from '../components';
 import { rcTheme } from '../themes';
@@ -67,7 +67,11 @@ const App: React.FC = () => {
                             path='/crisis-resources'
                             render={() => <CrisisResources />}
                         />
-                        <Route exact path='/forms' render={() => <Forms />} />
+                        <Route
+                            exact
+                            path='/forms'
+                            render={() => <FormsAndLinks />}
+                        />
                         <Route
                             exact
                             path='/contact'

@@ -5,5 +5,5 @@ export { default as Nav } from './Nav';
 export { default as MeetAlyssa } from './MeetAlyssa';
 export { default as WhatToExpect } from './WhatToExpect';
 export { default as CrisisResources } from './CrisisResources';
-export { default as Forms } from './Forms';
+export { default as FormsAndLinks } from './FormsAndLinks';
 export { default as Contact } from './Contact';

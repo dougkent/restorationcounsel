@@ -140,7 +140,7 @@ const Nav: React.FC = () => {
                             to='/forms'
                             onClick={handleMobileMenuClose}
                             className={classes.navLink}>
-                            Forms
+                            Forms & Links
                         </ReactRouter.Link>
                     </Typography>
                 </ListItemText>
@@ -240,7 +240,7 @@ const Nav: React.FC = () => {
                                         to='/forms'
                                         onClick={handleMobileMenuClose}
                                         className={classes.navLink}>
-                                        Forms
+                                        Forms & Links
                                     </ReactRouter.Link>
                                 </Typography>
                                 <Typography

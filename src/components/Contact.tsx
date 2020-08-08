@@ -22,6 +22,9 @@ const useStyles = makeStyles((theme: Theme) =>
             [theme.breakpoints.up('md')]: {
                 flexWrap: 'nowrap',
             },
+            '& a': {
+                color: theme.palette.primary.main,
+            },
         },
         contactSection: {
             width: '100%',

@@ -1,0 +1,9 @@
+{
+    "short_name": "Restoration Counseling",
+    "name": "Restoration Counseling",
+    "icons": [],
+    "start_url": ".",
+    "display": "standalone",
+    "theme_color": "#000000",
+    "background_color": "#ffffff"
+}

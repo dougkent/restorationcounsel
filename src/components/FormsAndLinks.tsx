@@ -19,7 +19,6 @@ import minorIntakeForm from '../assets/forms/Child_Adolescent_Intake_Form.pdf';
 import creditCartPaymentForm from '../assets/forms/Credit_Card_Payment_Form.pdf';
 import hipaaPolicies from '../assets/forms/HIPAA_Policies.pdf';
 import releaseOfInfoForm from '../assets/forms/Release_of_Info_Consent_Form.pdf';
-import returnToInPersonForm from '../assets/forms/Return_to_InPerson_Consent_Form.pdf';
 import teletherapyForm from '../assets/forms/Teletherapy_Consent_Form.pdf';
 import * as intakePaperworkImg from '../assets/intake-paperwork.jpg';
 import * as teletherapyImg from '../assets/teletherapy.jpg';
@@ -90,11 +89,15 @@ const FormsAndLinks: React.FC = () => {
             <div className={classes.flex}>
                 <div className={classes.leftColumn}>
                     <Typography paragraph>
-                        Once you have scheduled an appointment with Alyssa,
-                        please complete the forms below and bring them to your
-                        first appointment. If you prefer to send them
-                        electronically, please scan and email them by using a
-                        scanner or the smartphone GeniusScan app (links below).
+                        Once you have scheduled an appointment with Alyssa, you
+                        will be sent a link to activate your online portal
+                        account. By clicking this link, you will then have
+                        access to electronic intake forms that can easily be
+                        completed on your computer, tablet, or smartphone.{' '}
+                        <i>
+                            A scanner or the GeniusScan app can also be used if
+                            preferred.
+                        </i>
                     </Typography>
                     <Typography paragraph>
                         <ul className={classes.list}>
@@ -171,10 +174,10 @@ const FormsAndLinks: React.FC = () => {
                 established username and password to login and search for
                 available appointment times by visiting&nbsp;
                 <a
-                    href='http://www.schedule.care'
+                    href='https://portal.therapyappointment.com/index.cfm/public:therapistdetail?directoryId=11ebbe9134006fe38e7e0e943d89650f'
                     target='_blank'
                     rel='noopener noreferrer'>
-                    www.schedule.care
+                    portal.therapyappointment.com
                 </a>
                 .
             </Typography>
@@ -221,14 +224,6 @@ const FormsAndLinks: React.FC = () => {
                     </Typography>
                     <Typography paragraph>
                         <ul className={classes.list}>
-                            <li>
-                                <a
-                                    href={returnToInPersonForm}
-                                    target='_blank'
-                                    rel='noopener noreferrer'>
-                                    COVID-19 Return to In-Person Consent Form
-                                </a>
-                            </li>
                             <li>
                                 <a
                                     href={releaseOfInfoForm}

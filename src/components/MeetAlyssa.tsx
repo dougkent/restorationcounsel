@@ -89,8 +89,7 @@ const MeetAlyssa: React.FC = () => {
                 <div className={classes.meetAlyssaText}>
                     <Typography variant='body1' paragraph>
                         Hi there! My name is Alyssa Meyers, and I am a Licensed
-                        Professional Counselor in the state of Texas and a
-                        Nationally Certified Counselor in the United States.
+                        Professional Counselor in the state of Texas.
                     </Typography>
                     <Typography variant='body1' paragraph>
                         Before entering a private practice setting, I gained
@@ -100,18 +99,24 @@ const MeetAlyssa: React.FC = () => {
                         psychiatric unit.
                     </Typography>
                     <Typography variant='body1' paragraph>
-                        I am passionate about creating a space of trust and
-                        honesty for all clients who are seeking change in their
-                        lives. My specialty areas include: anxiety/panic
-                        disorders, depression, past abuse, PTSD, mood disorders,
-                        and spirituality.
+                        I am passionate about creating a space of trust,
+                        honesty, and safety for all clients who are seeking
+                        change in their lives. My specialty areas include:
+                        trauma, PTSD/complex PTSD, anxiety/panic disorders,
+                        perfectionism, people-pleasing, boundaries, OCD,
+                        depression, mood disorders, and spirituality. I am
+                        certified in Brainspotting and trained in EMDR, and also
+                        love integrating different therapy techniques to fit a
+                        client's needs. In addition, I have experience working
+                        with other mental health professionals who need their
+                        own therapy space to prioritize their wellness.
                     </Typography>
                     <div
                         className={`${classes.meetAlyssaImg} ${classes.mobileImg}`}></div>
                     <Typography variant='body1' paragraph>
                         When I am not counseling, I love spending time with
-                        family, staying active, and leading music at my local
-                        church.
+                        family, being in nature, and being creative through
+                        music, ballet, and yoga.
                     </Typography>
                 </div>
             </div>

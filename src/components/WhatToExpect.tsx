@@ -12,7 +12,7 @@ import {
 
 // RC
 import { rcTheme } from '../themes';
-import * as officeImg from '../assets/office-inside.jpg';
+import * as officeImg from '../assets/office-inside-2.jpg';
 
 const useStyles = makeStyles((theme: Theme) =>
     createStyles({
@@ -39,7 +39,7 @@ const useStyles = makeStyles((theme: Theme) =>
             [`${theme.breakpoints.up('xs')} and (orientation: landscape)`]: {
                 display: 'none',
             },
-            [theme.breakpoints.up('sm')]: {
+            [theme.breakpoints.up('md')]: {
                 display: 'none',
             },
         },
@@ -50,7 +50,7 @@ const useStyles = makeStyles((theme: Theme) =>
                 width: '48%',
                 height: theme.spacing(50),
             },
-            [theme.breakpoints.up('sm')]: {
+            [theme.breakpoints.up('md')]: {
                 display: 'block',
                 width: '48%',
                 height: '100%',
@@ -61,10 +61,10 @@ const useStyles = makeStyles((theme: Theme) =>
             },
         },
         WhatToExpectText: {
-            [`${theme.breakpoints.up('xs')} and (orientation: landscape)`]: {
+            [`${theme.breakpoints.up('sm')} and (orientation: landscape)`]: {
                 width: '48%',
             },
-            [theme.breakpoints.up('sm')]: {
+            [theme.breakpoints.up('md')]: {
                 width: '48%',
             },
             [theme.breakpoints.up('lg')]: {

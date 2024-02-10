@@ -15,7 +15,7 @@ import {
 
 //RC
 import { rcTheme } from '../themes';
-import * as officeImage from '../assets/office-outside.jpg';
+import * as officeImage from '../assets/office-outside-2.jpg';
 
 const useStyles = makeStyles((theme: Theme) =>
     createStyles({
@@ -57,24 +57,24 @@ const CounselingServices: React.FC = () => {
     const classes = useStyles(rcTheme);
     const [expanded, setExpanded] = useState<string | false>(false);
 
-    const handleChange = (panel: string) => (
-        event: React.ChangeEvent<{}>,
-        newExpanded: boolean
-    ) => {
-        setExpanded(newExpanded ? panel : false);
-    };
+    const handleChange =
+        (panel: string) =>
+        (event: React.ChangeEvent<{}>, newExpanded: boolean) => {
+            setExpanded(newExpanded ? panel : false);
+        };
 
     return (
         <Container maxWidth='lg'>
             <Typography variant='h3'>Services</Typography>
             <Typography variant='body1' paragraph>
-                Restoration Counseling is a private practice in the Woodlands
-                area that is owned and operated by Alyssa Meyers, MA, LPC, NCC.
-                Alyssa primarily works with adults and teenagers and specializes
-                in the following areas:
+                Restoration Counseling is a private practice in The
+                Woodlands/Magnolia area that is owned and operated by Alyssa
+                Meyers, MA, LPC #72648. Alyssa primarily works with adults and
+                teenagers (15 and older) and specializes in the following areas:
             </Typography>
             <Typography variant='body1' paragraph>
-                Anxiety Disorders, Depression, Trauma, Abuse-related issues, and
+                Trauma, Anxiety, Perfectionism, Boundaries, People-Pleasing,
+                Obsessive-Compulsive Disorder (OCD), Depression, and
                 Christian-based counseling
             </Typography>
             <Typography variant='body1' paragraph>
@@ -155,6 +155,72 @@ const CounselingServices: React.FC = () => {
                             height='100%'
                             title='EMDR Video'
                             src='https://www.youtube.com/embed/Pkfln-ZtWeY'></iframe>
+                    </div>
+                </AccordionDetails>
+            </Accordion>
+            <Accordion
+                expanded={expanded === 'BSP'}
+                onChange={handleChange('BSP')}
+                square={true}>
+                <AccordionSummary>
+                    <Typography variant='body1'>Brainspotting (BSP)</Typography>
+                </AccordionSummary>
+                <AccordionDetails className={classes.accordionDetails}>
+                    <div>
+                        <Typography variant='body1' paragraph>
+                            Brainspotting is a unique therapy modality that uses
+                            our vision to access emotions, beliefs, and/or
+                            traumas stored in the subcortical region of the
+                            brain. How often have you said something to the
+                            effect of, "I know that's true, but I still feel
+                            this way!"? Essentially, BSP targets the area of the
+                            brain where that feeling or belief remains stuck.
+                            For more information on how this works, check out
+                            this starter video below! For a deeper dive, you can
+                            also check out the book "Brainspotting" by David
+                            Grand.
+                        </Typography>
+                    </div>
+                    <div className={classes.videoBox}>
+                        <iframe
+                            width='100%'
+                            height='100%'
+                            src='https://www.youtube.com/embed/7FO_udVWkqA?si=xBOGg5zCbZ4qT-Pp'
+                            title='BSP Video'></iframe>
+                    </div>
+                </AccordionDetails>
+            </Accordion>
+            <Accordion
+                expanded={expanded === 'IFS'}
+                onChange={handleChange('IFS')}
+                square={true}>
+                <AccordionSummary>
+                    <Typography variant='body1'>
+                        Internal Family Systems (IFS)
+                    </Typography>
+                </AccordionSummary>
+                <AccordionDetails className={classes.accordionDetails}>
+                    <div>
+                        <Typography variant='body1' paragraph>
+                            Internal Family Systems, or IFS, is a therapy
+                            modality that explores different parts of ourselves
+                            that play a role in our thoughts, emotions, and
+                            behaviors. In IFS, we believe that the mind is
+                            naturally made up of many parts (e.g., our inner
+                            critic, our inner child, etc.). The goal of IFS is
+                            to increase our ability to be courageous, curious,
+                            and compassionate towards ourselves and as we become
+                            more and more aware of the roles these parts play in
+                            our lives. To learn more, explore this starter
+                            video!
+                        </Typography>
+                    </div>
+                    <div className={classes.videoBox}>
+                        <iframe
+                            width='100%'
+                            height='100%'
+                            src='https://www.youtube.com/embed/5DFIfSHL11w?si=hHAGCkAcHTy43YF1'
+                            title='IFS Video'></iframe>
                     </div>
                 </AccordionDetails>
             </Accordion>

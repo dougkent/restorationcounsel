@@ -51,39 +51,42 @@ const Contact: React.FC = () => {
                         <span>(936)-203-1772</span>
                     </Typography>
                     <Typography paragraph>
-                        250 Ed English Drive, Building 3, Suite B-5
+                        In-person sessions available Tuesdays and Thursdays
+                        9am-4pm.
+                    </Typography>
+                    <Typography paragraph>
+                        Teletherapy sessions available Mondays 9am-4pm.
+                    </Typography>
+                    <Typography paragraph>
+                        33300 Egypt Lane, Suite C600
                         <br />
-                        Shenandoah, TX 77385
+                        Magnolia, TX 77354
                     </Typography>
                     <Typography paragraph>Directions to the office:</Typography>
                     <Typography paragraph>
                         <ul>
+                            <li>Building C is at the center of the complex.</li>
                             <li>
-                                Traveling North on I-45, take the Research
-                                Forest exit & stay on feeder OR Traveling South
-                                on I-45, take Research Forest exit and loop
-                                around so you are on the North-bound feeder
+                                I recommend parking in a space as close to the
+                                mailbox as possible, then walk down the sidewalk
+                                to the first pathway on the right.
                             </li>
                             <li>
-                                Take a right on Ed English Drive. (Directly
-                                after Portofino shopping center before Discount
-                                Tires)
+                                Down that breezeway you'll find C600, which is
+                                the second (and last) office door on the left.
                             </li>
                             <li>
-                                Take a right into the office suites and building
-                                3 will be directly ahead and on the right. The
-                                office suite is labeled "B" on the outside.
-                            </li>
-                            <li>
-                                Please make yourself at home in the waiting room
-                                until your pre-determined appointment time.
+                                The sign says "Counseling Services" with a
+                                dandelion on it. Please wait in the waiting
+                                room, and I'll come out to greet you when it's
+                                time for our session!
                             </li>
                         </ul>
                     </Typography>
                 </div>
                 <div className={classes.contactSection}>
                     <iframe
-                        src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3448.656566619595!2d-95.45124499250775!3d30.189802949191545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8647371c6db9aa2d%3A0x6b0ebc21ffaf02e!2s250+Ed+English+Dr+%235%2C+Shenandoah%2C+TX+77385!5e0!3m2!1sen!2sus!4v1491871997756'
+                        src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1024.975412115582!2d-95.56133606830497!3d30.22017315475045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86472ffe07655555%3A0xfb263c65d6926249!2s33300%20Egypt%20Ln%20%23%20C600%2C%20Magnolia%2C%20TX%2077354!5e0!3m2!1sen!2sus!4v1707595193037!5m2!1sen!2sus'
                         width='100%'
                         height='300'
                         title='Restoration Counseling Map'

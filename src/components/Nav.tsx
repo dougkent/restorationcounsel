@@ -21,6 +21,7 @@ import MenuIcon from '@material-ui/icons/Menu';
 // RC
 import { rcTheme } from '../themes';
 import * as navBarBackgrounImage from '../assets/navbar-background.jpg';
+import { ReactComponent as DandelionMark } from '../assets/dandelion-mark.svg';
 
 const useStyles = makeStyles((theme: Theme) =>
     createStyles({
@@ -45,15 +46,41 @@ const useStyles = makeStyles((theme: Theme) =>
         },
         appBar: {
             boxShadow: 'none',
+            paddingTop: theme.spacing(1),
+            [`${theme.breakpoints.up('lg')}`]: {
+                paddingTop: theme.spacing(3),
+            },
         },
         toolbar: {
             display: 'flex',
             justifyContent: 'space-between',
             alignItems: 'center',
         },
+        titleLink: {
+            display: 'flex',
+        },
         title: {
             fontFamily: "'Allura', cursive",
             marginBottom: 0,
+            [`${theme.breakpoints.up('lg')}`]: {
+                fontSize: '5em',
+            },
+        },
+        icon: {
+            height: '3em',
+            width: '2em',
+
+            marginTop: theme.spacing(-1.1),
+            [`${theme.breakpoints.up('sm')}`]: {
+                height: '4em',
+                width: '2em',
+            },
+            [`${theme.breakpoints.up('lg')}`]: {
+                marginTop: theme.spacing(-2),
+                height: '6em',
+                width: '3em',
+                marginLeft: theme.spacing(5),
+            },
         },
         navLink: {
             textDecoration: 'none',
@@ -170,28 +197,30 @@ const Nav: React.FC = () => {
                 className={classes.appBar}>
                 <Toolbar className={classes.toolbar}>
                     <Hidden smUp>
-                        <Typography
-                            variant='h4'
-                            color='primary'
-                            className={classes.title}>
-                            <ReactRouter.Link
-                                to='/'
-                                className={classes.navLink}>
+                        <ReactRouter.Link
+                            to='/'
+                            className={`${classes.navLink} ${classes.titleLink}`}>
+                            <DandelionMark className={classes.icon} />
+                            <Typography
+                                variant='h4'
+                                color='primary'
+                                className={classes.title}>
                                 Restoration Counseling
-                            </ReactRouter.Link>
-                        </Typography>
+                            </Typography>
+                        </ReactRouter.Link>
                     </Hidden>
                     <Hidden xsDown>
-                        <Typography
-                            variant='h3'
-                            color='primary'
-                            className={classes.title}>
-                            <ReactRouter.Link
-                                to='/'
-                                className={classes.navLink}>
+                        <ReactRouter.Link
+                            to='/'
+                            className={`${classes.navLink} ${classes.titleLink}`}>
+                            <DandelionMark className={classes.icon} />
+                            <Typography
+                                variant='h3'
+                                color='primary'
+                                className={classes.title}>
                                 Restoration Counseling
-                            </ReactRouter.Link>
-                        </Typography>
+                            </Typography>
+                        </ReactRouter.Link>
                     </Hidden>
                     <div>
                         <Hidden mdUp>

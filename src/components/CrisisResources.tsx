@@ -61,6 +61,17 @@ const CrisisResources: React.FC = () => {
                     </li>
                     <li>Teen Crisis Hotline: Text “START” to 741741</li>
                     <li>Gulf Coast Center Crisis Hotline: 866-729-3848</li>
+                    <li>
+                        For further assistance on outpatient referrals, please
+                        contact Mosaics of Mercy to be connected to a family
+                        navigator.&nbsp;
+                        <a
+                            href='https://mosaicsofmercy.com/'
+                            target='_blank'
+                            rel='noopener noreferrer'>
+                            https://mosaicsofmercy.com/
+                        </a>
+                    </li>
                 </ul>
             </Typography>
         </Container>

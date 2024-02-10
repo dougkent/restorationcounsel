@@ -30,13 +30,13 @@ const Footer: React.FC = () => {
     return (
         <div className={classes.footer}>
             <div>
-                Alyssa Meyers, MA, LPC, NCC
+                Alyssa Meyers, MA, LPC
                 <br />
                 Licensed Professional Counselor #72648
                 <br />
-                250 Ed English Drive, Building 3, Suite B-5
+                33300 Egypt Lane, Suite C600
                 <br />
-                Shenandoah, TX 77385
+                Magnolia, TX 77354
                 <br />
                 (936)-203-1772
                 <br />

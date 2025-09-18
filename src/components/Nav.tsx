@@ -21,7 +21,6 @@ import MenuIcon from '@material-ui/icons/Menu';
 // RC
 import { rcTheme } from '../themes';
 import * as navBarBackgrounImage from '../assets/navbar-background.jpg';
-import { ReactComponent as DandelionMark } from '../assets/dandelion-mark.svg';
 
 const useStyles = makeStyles((theme: Theme) =>
     createStyles({
@@ -64,6 +63,7 @@ const useStyles = makeStyles((theme: Theme) =>
             marginBottom: 0,
             [`${theme.breakpoints.up('lg')}`]: {
                 fontSize: '5em',
+                marginLeft: theme.spacing(5),
             },
         },
         icon: {
@@ -200,7 +200,6 @@ const Nav: React.FC = () => {
                         <ReactRouter.Link
                             to='/'
                             className={`${classes.navLink} ${classes.titleLink}`}>
-                            <DandelionMark className={classes.icon} />
                             <Typography
                                 variant='h4'
                                 color='primary'
@@ -213,7 +212,6 @@ const Nav: React.FC = () => {
                         <ReactRouter.Link
                             to='/'
                             className={`${classes.navLink} ${classes.titleLink}`}>
-                            <DandelionMark className={classes.icon} />
                             <Typography
                                 variant='h3'
                                 color='primary'

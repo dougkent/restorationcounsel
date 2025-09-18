@@ -51,11 +51,8 @@ const Contact: React.FC = () => {
                         <span>(936)-203-1772</span>
                     </Typography>
                     <Typography paragraph>
-                        In-person sessions available Tuesdays and Thursdays
-                        9am-4pm.
-                    </Typography>
-                    <Typography paragraph>
-                        Teletherapy sessions available Mondays 9am-4pm.
+                        Daytime appointments are available either in-person or
+                        online in the state of Texas.
                     </Typography>
                     <Typography paragraph>
                         33300 Egypt Lane, Suite C600

@@ -12,7 +12,7 @@ import {
 
 // RC
 import { rcTheme } from '../themes';
-import * as alyssaImg from '../assets/headshot.jpg';
+import * as alyssaImg from '../assets/headshot_v2.jpg';
 
 const useStyles = makeStyles((theme: Theme) =>
     createStyles({
@@ -89,34 +89,40 @@ const MeetAlyssa: React.FC = () => {
                 <div className={classes.meetAlyssaText}>
                     <Typography variant='body1' paragraph>
                         Hi there! My name is Alyssa Meyers, and I am a Licensed
-                        Professional Counselor in the state of Texas.
-                    </Typography>
-                    <Typography variant='body1' paragraph>
-                        Before entering a private practice setting, I gained
-                        counseling experience at community agencies, as well as
-                        several years’ experience at an inpatient hospital,
-                        where I served as lead therapist on the adult
-                        psychiatric unit.
+                        Professional Counselor in the state of Texas. With over
+                        10 years of experience in the mental health field, I
+                        have a background in private practice, community
+                        agencies, and inpatient hospital care.
                     </Typography>
                     <Typography variant='body1' paragraph>
                         I am passionate about creating a space of trust,
                         honesty, and safety for all clients who are seeking
                         change in their lives. My specialty areas include:
-                        trauma, PTSD/complex PTSD, anxiety/panic disorders,
-                        perfectionism, people-pleasing, boundaries, OCD,
-                        depression, mood disorders, and spirituality. I am
-                        certified in Brainspotting and trained in EMDR, and also
-                        love integrating different therapy techniques to fit a
-                        client's needs. In addition, I have experience working
+                        post-traumatic stress, anxiety, perfectionism,
+                        people-pleasing, boundaries, depression, mood disorders,
+                        spirituality, and Christian-based counseling upon
+                        request. I am trained in both EMDR and Brainspotting,
+                        and I integrate various therapy techniques to fit my
+                        clients' needs.
+                    </Typography>
+                    <Typography variant='body1' paragraph>
+                        If you're a high achiever, a deep feeler, dealing with
+                        burnout, stress, or just need some peace, I might be a
+                        good fit for you. I value authenticity in and out of the
+                        therapy room, so that is one thing you can expect to
+                        find when you reach out. I also have experience working
                         with other mental health professionals who need their
-                        own therapy space to prioritize their wellness.
+                        own therapy space to prioritize wellness.
                     </Typography>
                     <div
                         className={`${classes.meetAlyssaImg} ${classes.mobileImg}`}></div>
                     <Typography variant='body1' paragraph>
-                        When I am not counseling, I love spending time with
-                        family, being in nature, and being creative through
-                        music, ballet, and yoga.
+                        When I am not counseling, I love spending time with my
+                        family, being in nature, or being creative through
+                        music, ballet, and yoga. I am a dog lover and an avid
+                        foodie! Any chance I get for self-care, you may find me
+                        going for a walk, watching a feel-good movie, or
+                        focusing on all things relaxation.
                     </Typography>
                 </div>
             </div>

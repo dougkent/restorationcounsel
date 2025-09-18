@@ -1,5 +1,6 @@
 // React
 import React, { useState } from 'react';
+import * as ReactRouter from 'react-router-dom';
 
 // Material UI
 import {
@@ -68,9 +69,12 @@ const CounselingServices: React.FC = () => {
             <Typography variant='h3'>Services</Typography>
             <Typography variant='body1' paragraph>
                 Restoration Counseling is a private practice in The
-                Woodlands/Magnolia area that is owned and operated by Alyssa
-                Meyers, MA, LPC #72648. Alyssa primarily works with adults and
-                teenagers (15 and older) and specializes in the following areas:
+                Woodlands/Magnolia area that is owned and operated by{' '}
+                <ReactRouter.Link to='/meet-alyssa'>
+                    Alyssa Meyers
+                </ReactRouter.Link>
+                , MA, LPC #72648. Alyssa primarily works with adults and
+                teenagers (16 and older) and specializes in the following areas:
             </Typography>
             <Typography variant='body1' paragraph>
                 Trauma, Anxiety, Perfectionism, Boundaries, People-Pleasing,
